@@ -103,23 +103,23 @@ public class MainMethod {
 		 double inputnumber2 = input.nextDouble();
 		 
 		 System.out.println("Please type the oparation:");
-			int condition = input.nextInt();
-	
+		  Scanner option = new Scanner(System.in);
+		  String condition = option.next();
 		
 		switch(condition) {
-	    case 1: 
+	    case "Summation": 
 	    	result=Summation.getSummation(inputnumber1,inputnumber2);
 	    	System.out.println("Summation="+result);
-	    	break;
-	    case 2:  
+	    	
+	    case "Multiplication":  
 	    	result=Multiplication.getMultiplication(inputnumber1,inputnumber2);
 	    	System.out.println("Multiplication="+result);
 	    	break;
-	    case 3:  
+	    case "Division":  
             result=Division.getDivision(inputnumber1,inputnumber2);
             System.out.println("Division="+result);
             break;
-	    case 4:
+	    case "Subtraction":
 	    	 result=Subtraction.getSubtraction(inputnumber1,inputnumber2);
 	    	 System.out.println("Subtraction="+result);
 	    	 break;
