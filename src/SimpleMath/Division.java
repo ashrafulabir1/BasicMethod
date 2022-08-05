@@ -8,7 +8,7 @@ public class Division extends Variables{
 	  private double division;
 		
 		//regular method of doing division
-		public double getDivision(double firstNumber, double secondNumber) {
+		public static double getDivision(double firstNumber, double secondNumber) {
 			double division = firstNumber/secondNumber;
 			return division; 
 		}   

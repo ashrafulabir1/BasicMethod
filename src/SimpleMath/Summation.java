@@ -7,7 +7,7 @@ public class Summation extends Variables {
 	private double summation;
 	
 	//regular method of doing summation
-	public double getSummation(double firstNumber, double secondNumber) {
+	public static double getSummation(double firstNumber, double secondNumber) {
 		double summation = firstNumber+secondNumber;
 		return summation; 
 	}   

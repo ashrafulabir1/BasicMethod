@@ -8,7 +8,7 @@ public class Multiplication extends Variables{
 		  private double multiplication;
 			
 			//regular method of doing Multiplication
-			public double getMultiplication(double firstNumber, double secondNumber) {
+			public static double getMultiplication(double firstNumber, double secondNumber) {
 				double multiplication = firstNumber*secondNumber;
 				return multiplication; 
 			}   

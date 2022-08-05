@@ -86,5 +86,48 @@ public class MainMethod {
              double valuealreadysetedfordivision=0; //initialized 
              
              System.out.println("Divisions of settedValues:"+division.divisionOfTwoNumber(+valuealreadysetedfordivision)); //Division of divisionOfTwoNumber() method
+	
+             allMethodCall();
 	}
+	
+	
+	public static void allMethodCall() {
+		double result;
+		
+		
+		 Scanner input = new Scanner(System.in);
+		 System.out.println("Please type the first input:");
+		 double inputnumber1 = input.nextDouble();
+		
+		 System.out.println("Please type the 2nd input:");
+		 double inputnumber2 = input.nextDouble();
+		 
+		 System.out.println("Please type the oparation:");
+			int condition = input.nextInt();
+	
+		
+		switch(condition) {
+	    case 1: 
+	    	result=Summation.getSummation(inputnumber1,inputnumber2);
+	    	System.out.println("Summation="+result);
+	    	break;
+	    case 2:  
+	    	result=Multiplication.getMultiplication(inputnumber1,inputnumber2);
+	    	System.out.println("Multiplication="+result);
+	    	break;
+	    case 3:  
+            result=Division.getDivision(inputnumber1,inputnumber2);
+            System.out.println("Division="+result);
+            break;
+	    case 4:
+	    	 result=Subtraction.getSubtraction(inputnumber1,inputnumber2);
+	    	 System.out.println("Subtraction="+result);
+	    	 break;
+	    default :
+	    	System.out.println("Not exist");
+	    
+	}
+	}
+	
+	
 }

@@ -7,7 +7,7 @@ public class Subtraction extends Variables {
 	  private double substraction;
 		
 			//regular method of doing subtraction
-			public double getSubtraction(double firstNumber, double secondNumber) {
+			public static double getSubtraction(double firstNumber, double secondNumber) {
 				   double subtraction = firstNumber-secondNumber;
 				   return subtraction; 
 			}   
