@@ -92,9 +92,9 @@ public class MainMethod {
 	
 	
 	public static void allMethodCall() {
+		
 		double result;
-		
-		
+
 		 Scanner input = new Scanner(System.in);
 		 System.out.println("Please type the first input:");
 		 double inputnumber1 = input.nextDouble();
@@ -110,7 +110,7 @@ public class MainMethod {
 	    case "Summation": 
 	    	result=Summation.getSummation(inputnumber1,inputnumber2);
 	    	System.out.println("Summation="+result);
-	    	
+	    	break;
 	    case "Multiplication":  
 	    	result=Multiplication.getMultiplication(inputnumber1,inputnumber2);
 	    	System.out.println("Multiplication="+result);
